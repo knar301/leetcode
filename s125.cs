@@ -5,9 +5,9 @@ using System.Collections.Generic;
 //Leetcode 125
 //Solved
 
-public bool class Solution125
+public class Solution125
 {
-	public static void IsPalindrome(string s)
+	public static bool IsPalindrome(string s)
 	{
 		string t = s.ToLower();
 		List<char> characters = t.ToList();
@@ -25,7 +25,6 @@ public bool class Solution125
 			if (characters[left] != characters[right])
 			{
 				return false;
-				break;
 			}
 			left++;
 			right--;
