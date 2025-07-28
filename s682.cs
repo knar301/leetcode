@@ -1,9 +1,10 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 class Solution682
 {
-	public static void CalPoints(string[] operations)
+	public static int CalPoints(string[] operations)
 	{
 		var stack = new Stack<int>();
 		int current = 0;
@@ -36,6 +37,6 @@ class Solution682
 			}
 		}
 		int[] res = stack.ToArray();
-		Console.WriteLine(string.Join(",",res));
+		return res.Sum();
 	}
 }
